@@ -1,13 +1,15 @@
-Hello Git 
-# Zameen.com Islamabad Rental Scraper
+ ■ Zameen.com Islamabad Rental Scraper
 
-Yeh ek Python scraper hai jo Zameen.com se Islamabad ke kiraye ke gharon ka data nikal kar CSV aur Excel mein save karta hai.
+A Python-based web scraper that extracts rental property data from Zameen.com for Islamabad, cleans the data, and exports it into CSV and Excel formats.
 
-## Features
-- Multi-page scraping
-- Price parsing (PKR, Lakh, Crore)
-- Islamabad-only filter
+■ Features
+- Multi-page scraping with polite delays to avoid rate-limiting.
+- Automatic retries on failed requests.
+- Robust parsing for prices (supports PKR, Lakh, Crore, Thousand).
+- Area normalization (converts Kanal to Marla for consistency).
+- Filters data to ensure only authentic Islamabad properties are included.
 
-## How to Run
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run the script: `python zameen_scraper.py`
+ ■ Requirements
+Ensure you have Python installed, then install the required dependencies:
+```bash
+pip install -r requirements.txt
